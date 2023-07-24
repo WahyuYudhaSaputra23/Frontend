@@ -56,7 +56,7 @@ const AddProduct = () => {
                     <div className="control">
                         <div className="file">
                             <label className="file-label">
-                                <input type="file" className='file-input' onChange={loadImage} />
+                            <input type="file" className='file-input' name="file" onChange={loadImage} />
                                 <span className='file-cta'>
                                     <span className='file-label'>Choose a file...</span>
                                 </span>
