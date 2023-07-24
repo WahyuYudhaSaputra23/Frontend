@@ -13,7 +13,7 @@ const LoginForm = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/auth/login', {
+      const response = await axios.post('https://backend-id17.vercel.app/auth/login', {
         username,
         password,
       });
@@ -29,7 +29,7 @@ const LoginForm = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/auth/register', {
+      await axios.post('https://backend-id17.vercel.app/auth/register', {
         username,
         password,
       });

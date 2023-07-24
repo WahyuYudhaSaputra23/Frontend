@@ -17,7 +17,7 @@ const EditProduct = () => {
     },[]);
 
     const getProductById = async () =>{
-        const response = await axios.get(`http://localhost:5000/products/${id}`);
+        const response = await axios.get(`https://backend-id17.vercel.app/products/${id}`);
         setTitle(response.data.name);
         setFile(response.data.image);
         setPreview(response.data.url);
@@ -35,7 +35,7 @@ const EditProduct = () => {
         formData.append("file", file);
         formData.append("title", title);
         try {
-            await axios.patch(`http://localhost:5000/products/${id}`, formData, {
+            await axios.patch(`https://backend-id17.vercel.app/products/${id}`, formData, {
                 headers:{
                     "Content-Type": "multipart/form-data"
                 }

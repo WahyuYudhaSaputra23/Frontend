@@ -13,7 +13,7 @@ const RegisterForm = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/auth/register', {
+      await axios.post('https://backend-id17.vercel.app/auth/register', {
         username,
         password,
       });
