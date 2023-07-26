@@ -35,7 +35,7 @@ const EditProduct = () => {
         formData.append("file", file);
         formData.append("title", title);
         try {
-            await axios.patch(`https://backend-id17.vercel.app/products/${id}`, formData, {
+            await axios.put(`https://backend-id17.vercel.app/products/${id}`, formData, {
                 headers:{
                     "Content-Type": "multipart/form-data"
                 }
