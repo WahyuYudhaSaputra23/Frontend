@@ -18,7 +18,7 @@ const EditProduct = () => {
 
     const getProductById = async () =>{
         const response = await axios.get(`https://backend-id17.vercel.app/products/${id}`);
-        setTitle(response.data.name);
+        setTitle(response.data.title);
         setFile(response.data.image);
         setPreview(response.data.url);
     }
