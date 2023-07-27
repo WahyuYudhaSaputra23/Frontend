@@ -226,6 +226,10 @@ nav {
 
 /* laptop */
 @media (max-width: 992px){
+  .home {
+    text-align: center;
+  }
+  
   .nav-links a {
     font-size: 18px;
   }
@@ -249,10 +253,18 @@ nav {
     justify-content: space-between;
     align-items: center;
   }
+
+  .about p {
+    text-align: justify;
+  }
 }
 
 /* tablet */
 @media (max-width: 768px){
+  .home {
+    text-align: center;
+  }
+  
   .nav-links a {
     font-size: 17px;
   }
@@ -276,10 +288,18 @@ nav {
     justify-content: space-between;
     align-items: center;
   }
+
+  .about p {
+    text-align: justify;
+  }
 }
 
 /* mobile phone */
 @media (max-width: 576px){
+  .home {
+    text-align: center;
+  }
+
   .nav-links a {
     font-size: 12px;
   }
@@ -312,6 +332,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .about p {
+    text-align: justify;
   }
 }
 
