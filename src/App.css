@@ -1,9 +1,5 @@
 .app {
   background-position: center;
   background-image: url('./assets/images/gambar4.jpg');
-  height: 100vh;
-  /* background-repeat: no-repeat;
-    background-size: cover;
-     */
-  /* tambahkan gaya lainnya sesuai kebutuhan */
+  min-height: 100vh;
 }
